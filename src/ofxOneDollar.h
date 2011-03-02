@@ -284,12 +284,15 @@ class ofxOneDollar {
 public:
 	ofxOneDollar() 
 		:num_samples(64)
+		,square_size(250.0)
+		,angle_precision(1.0)
 	{
-		half_diagonal = 0.5 * sqrt((250.0 * 250.0) + (250.0 * 250.0));
+		half_diagonal = 0.5 * sqrt((square_size*square_size) + (square_size*square_size));
 	}
 	
 	void addGesture(ofxGesture* pGesture) {
 		// finalize and add.
+		pGesture->angle_precision = angle_precision;
 		pGesture->normalize(num_samples);
 		gestures.push_back(pGesture);
 	}
@@ -346,6 +349,8 @@ public:
 	}
 	
 	std::vector<ofxGesture*> gestures;
+	double square_size;
 	double half_diagonal;
 	int num_samples;
+	
 };
