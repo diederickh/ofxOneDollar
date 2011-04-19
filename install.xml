@@ -4,8 +4,8 @@
 	<author>Diederick Huijbers</author>
 	<author_website>http://www.roxlu.com</author_website>
 	<code_url>https://github.com/roxlu/ofxOneDollar</code_url>
-
 	<download_url>https://github.com/roxlu/ofxOneDollar/zipball/master</download_url>
+	<site_url>https://github.com/roxlu/ofxOneDollar</site_url>
 	<forum_url></forum_url>
 	<supported_os>
 		<win>y</win>
