@@ -1,0 +1,26 @@
+ <install>
+	<name>ofxOneDollar</name>
+	<version>0.1</version>
+	<author>Diederick Huijbers</author>
+	<author_website>http://www.roxlu.com</author_website>
+	<code_url>https://github.com/roxlu/ofxOneDollar</code_url>
+
+	<download_url>https://github.com/roxlu/ofxOneDollar/zipball/master</download_url>
+	<forum_url></forum_url>
+	<supported_os>
+		<win>y</win>
+		<mac>y</mac>
+		<linux>y</linux>
+	</supported_os>
+
+	<description><![CDATA[Implementation of the fast 2D-gesture recognizer called $1]]></description>
+	<add>
+		<include>
+			<path></path>
+		</include>
+		<link>
+			<lib os="" compiler=""></lib>
+		</link>
+	</add>
+
+</install>
