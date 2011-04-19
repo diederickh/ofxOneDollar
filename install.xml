@@ -14,13 +14,6 @@
 	</supported_os>
 
 	<description><![CDATA[Implementation of the fast 2D-gesture recognizer called $1]]></description>
-	<add>
-		<include>
-			<path></path>
-		</include>
-		<link>
-			<lib os="" compiler=""></lib>
-		</link>
-	</add>
+	
 
 </install>
