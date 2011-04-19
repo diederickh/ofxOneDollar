@@ -112,8 +112,7 @@ struct ofxGesture {
 			len += (points[i-1] - points[i]).length();
 		}
 		return len;
-	}
-	
+	}	
 	
 	double indicativeAngle() { 
 		Vec2d c = centroid(); // TODO: optimize
@@ -269,6 +268,7 @@ struct ofxGesture {
 				rGesture.resampled_points.push_back(Vec2d(x,y));
 			}
 		}
+		return is;
 	}
 	
 	std::string name;
@@ -314,6 +314,7 @@ public:
 	void load(string sFile) {
 		std::ifstream in_file(sFile.c_str());
 		if(!in_file) {
+			ofLog(OF_LOG_ERROR, "Error while loading gesture file: '%s'", sFile.c_str());
 			return;
 		}
 		// TODO: reset first.
@@ -352,5 +353,5 @@ public:
 	double square_size;
 	double half_diagonal;
 	int num_samples;
-	
+	double angle_precision;
 };
